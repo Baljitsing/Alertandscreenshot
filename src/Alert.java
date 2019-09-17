@@ -13,7 +13,7 @@ public class Alert {
 		driver.get("https://mail.rediff.com/cgi-bin/login.cgi");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().pageLoadTimeout(15, TimeUnit.SECONDS);
-		
+		System.out.println("hi");
 		String title=driver.getTitle();
 		System.out.println("Title of web page is :"+title);
 		driver.findElement(By.xpath("//input[@name='proceed']")).click();
